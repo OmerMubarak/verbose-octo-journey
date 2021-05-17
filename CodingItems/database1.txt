@@ -1,0 +1,5 @@
+GameId(Int)[Unique][Not Null][AutoINC], GameName(VarChar{200})[Not Null], Stock(Int{10})[default], Price(dec{5,2})[Not Null], AgeRating(Int)[Not Null]
+
+CustomerId(Int{100})[Unique][Not Null][AutoINC], FirstName(VarChar{50})[Not Null], LastName(VarChar{50})[Not Null], Address(VarChar{100})[Not Null], fk_OrderID(Int{100})[default], DoB(Date)[Not Null]
+
+OrderID(Int{100})[Unique][Not Null][AutoINC], GameId(Int{100})[Not Null], fk_CustomerId(Int{100})[Not Null], FirstName(VarChar{50})[Not Null], OrderStatus(VarChar{50})[default], Total(dec{10,2}[Not Null], Placed(Date)[Default]
