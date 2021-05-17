@@ -1,0 +1,4 @@
+Press I to start inserting and writing text.
+Press ESC to go to the bottom terminal section.
+:w saves the file.
+:x saves and exits.
