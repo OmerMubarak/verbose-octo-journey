@@ -47,6 +47,26 @@ public class Garage {
 		myGarage.remove(found);
 	}
 
+	public void addByType(String type) {
+		Vehicle found = null;
+		for (Vehicle vehicle : myGarage) {
+			if (vehicle.getType() == type) {
+				found = vehicle;
+			}
+		}
+		myGarage.add(found);
+	}
+
+	public ArrayList<Vehicle> searchByType(String type) {
+		ArrayList<Vehicle> found = new ArrayList<Vehicle>();
+		for (Vehicle vehicle : myGarage) {
+			if (vehicle.getType().equals(type)) {
+				found.add(vehicle);
+			}
+		}
+		return found;
+	}
+
 	public void removeById(int id) {
 		Vehicle found = null;
 		for (Vehicle vehicle : myGarage) {
@@ -75,11 +95,24 @@ public class Garage {
 		removeById(id);
 	}
 
+	public Vehicle findById(int id) {
+		for (Vehicle v : myGarage) {
+			if (v.getId() == id) {
+				return v;
+			}
+		}
+		return null;
+	}
+
 	public void emptyGarage() {
 		myGarage.clear();
 	}
-	
+
 	public ArrayList<Vehicle> getGarage() {
 		return myGarage;
+	}
+
+	public int getSize() {
+		return myGarage.size();
 	}
 }

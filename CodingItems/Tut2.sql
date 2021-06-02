@@ -1,4 +1,5 @@
 SHOW databases;
+
 USE world;
 USE sakila;
 SHOW tables;

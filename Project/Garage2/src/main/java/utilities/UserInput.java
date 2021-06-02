@@ -6,6 +6,7 @@ public class UserInput {
 	private Scanner scan = new Scanner(System.in);
 
 	private static UserInput instance = null;
+	boolean sidecar;
 
 	private UserInput() {
 	}
@@ -33,6 +34,7 @@ public class UserInput {
 	}
 
 	public boolean getBool() {
-		return scan.hasNextBoolean();
-		}
+		return scan.nextBoolean();
+	}
+
 }

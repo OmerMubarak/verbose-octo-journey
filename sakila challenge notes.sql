@@ -1,8 +1,9 @@
 SHOW DATABASES;
 USE sakila;
+USE some_database;
 SHOW TABLES;
 DESCRIBE actor;
-SELECT * FROM FILM;
+SELECT * FROM games;
 SELECT * FROM staff;
 SELECT * FROM store;
 SELECT * FROM FILM_LIST;
@@ -15,7 +16,7 @@ SELECT * FROM COUNTRY;
 SELECT * FROM LANGUAGE;
 DESCRIBE RENTAL;
 DESCRIBE INVENTORY;
-
+DESCRIBE games;
 
 SELECT max(category_count) FROM(
  SELECT COUNT(f.category_id) as category_count FROM f.film_category GROUP BY f.category_id) as calc1;
