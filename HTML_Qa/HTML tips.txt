@@ -1,0 +1,4 @@
+HTML
+target _blank = new tab 
+
+caniuse.com - shows what you can use for which browsers.
