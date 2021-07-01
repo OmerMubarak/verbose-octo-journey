@@ -1,0 +1,56 @@
+
+body {
+    background-color: antiquewhite;
+  }
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+#zoo {
+    border: solid green;
+    width: 400px;
+}
+
+
+a:link {
+    color:chartreuse;
+}
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+a:active {
+    color: goldenrod;
+}
+
+[id="jojo"] {
+    border:double red;
+    width: 80px;
+}
+
+#llamadingo {
+    margin:auto;
+    width:20%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p::first-letter{
+    color: red;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+input:focus{
+    background-color: salmon;
+}
+
+.flex-container {
+    display: flex;
+    align-content:space-between;
+    background-color: powderblue;
+
+}
